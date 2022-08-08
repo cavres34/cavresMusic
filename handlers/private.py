@@ -8,29 +8,29 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://images.app.goo.gl/MTLXTSDCA4MLHScP7",
-                caption=(f"""● **ᴍᴇʀʜᴀʙᴀ** {message.from_user.mention} \n\n● **𝖡𝖾𝗇** {bot} !\n\n● **sᴇsʟɪ sᴏʜʙᴇᴛʟᴇʀᴅᴇ ᴍᴜ̈ᴢɪᴋ ᴄ̧ᴀʟᴀʙɪʟᴇɴ sᴇssɪᴢ sɪɴᴇᴍᴀ ᴏʏᴜɴᴜ ᴠᴇ ʏᴀş ᴛᴀʜᴍɪɴ ᴏʏɴᴀʏᴀʙɪʟᴇᴄᴇɢ̆ɪɴɪᴢ ʙᴏᴛᴜᴍ . . !** \n\n● **ʙᴀɴ ʏᴇᴛᴋɪsɪᴢ, sᴇs ʏᴏ̈ɴᴇᴛɪᴍ ʏᴇᴛᴋɪsɪ ᴠᴇʀɪᴘ ᴀsɪsᴛᴀɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇʏɪɴ . . !**"""),
+                "https://telegra.ph/file/9190514dd95bb720fefa2.jpg",
+                caption=(f"""⇨ **Merhaba Hoş Geldin [Efendim](tg://settings)** \n\n⇨ **Ben** {bot} \n\n⇨ **Sesli Sohbetlerde Müzik Çalabilirim** \n\n **Beni Gruba Yönetici olarak Ekleyip Kesintisiz Müziğin Tadını Çıkarabilirsiniz.**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🎉", url=f"https://t.me/MajesteMusicProBot?startgroup=true"
+                        "🎉 Beni Gruba Ekle 🎉", url=f"https://t.me/MajesteMusicProBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 ᴀsɪsᴛᴀɴ", url="https://t.me/MajesteMusicAsistan"
+                        "🇹🇷 Asistan", url="https://t.me/MajesteMusicProAsistan"
                     ),
                     InlineKeyboardButton(
-                        "📝 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/MajesteSahip"
+                        "📝 Sahibim", url="https://t.me/MacroPem"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📚 ᴋᴏᴍᴜᴛʟᴀʀ" , callback_data= "cbbilgi"
+                        "📚 Komutlar" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 ᴋᴀɴᴀʟ", url=f"https://t.me/MajesteBotlar"
+                        "📝 Sohbet Grubu", url=f"https://t.me/MajesteSohbetTr"
                     )
                 ]
                 
@@ -42,18 +42,18 @@ async def start(_, message: Message):
 
 @Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text("● **ɴᴏᴛ :\n\n ʙᴏᴛᴜɴ ᴀᴋᴛɪғ ᴄ̧ᴀʟɪşᴍᴀsɪ ɪᴄ̧ɪɴ sᴜ ᴜᴄ ʏᴇᴛᴋɪʏᴇ ɪʜᴛɪʏᴀᴄɪ ᴠᴀʀᴅɪʀ :\n\n> 𝖬𝖾𝗌𝖺𝗃𝗅𝖺𝗋𝗂 𝖲𝗂𝗅𝗆𝖾 ,\n> 𝖡𝖺𝗀𝗅𝖺𝗇𝗍𝗂 𝖣𝖺𝗏𝖾𝗍 𝖤𝗍𝗆𝖾 ,\n> 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖸𝗈𝗇𝖾𝗍𝗆𝖾 ,**", 
+      await message.reply_text(" Not ⇒ \n\n **Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** ⇒ \n\n ⇒ **Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "📚 𝖳𝗎𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data="herkes")
+                         "📚 Tüm Komutlar", callback_data="herkes")
                  ],[
                      InlineKeyboardButton(
-                         "🗯️ 𝖠𝗇𝖺 𝖬𝖾𝗇𝗎 ", callback_data="cbstart")
+                         "🗯️ Ana Menü ", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "📩 ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/MajesteSahip")
+                         "📩 Sahibim", url="https://t.me/MacroPem")
                  ]
              ]
          )
@@ -62,20 +62,20 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text("● **𝖭𝗈𝗍 :\n\n 𝖡𝗈𝗍𝗎𝗇 𝖠𝗄𝗍𝗂𝖿 𝖢𝖺𝗅𝗂𝗌𝗆𝖺𝗌𝗂 𝗂𝖼𝗂𝗇 𝖲𝗎 𝖴𝖼 𝗒𝖾𝗍𝗄𝗂𝗒𝖾 𝗂𝗁𝗍𝗂𝗒𝖺𝖼𝗂 𝖵𝖺𝗋𝖽𝗂𝗋 :\n\n> 𝖬𝖾𝗌𝖺𝗃𝗅𝖺𝗋𝗂 𝖲𝗂𝗅𝗆𝖾 ,\n> 𝖡𝖺𝗀𝗅𝖺𝗇𝗍𝗂 𝖣𝖺𝗏𝖾𝗍 𝖤𝗍𝗆𝖾 ,\n> 𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍 𝖸𝗈𝗇𝖾𝗍𝗆𝖾 ,**", 
+    await query.edit_message_text("Not ⇒ \n\n **Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** ⇒ \n\n ⇒ **Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
           InlineKeyboardButton(
-            "📚 𝖳𝗎𝗆 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋", callback_data ="herkes")
+            "📚 Tüm Komutlar", callback_data ="herkes")
         ],
         [
           InlineKeyboardButton(
-            "🗯️ 𝖠𝗇𝖺 𝖬𝖾𝗇𝗎", callback_data="cbstart")
+            "🗯️ Ana Menü", callback_data="cbstart")
         ],
         [
           InlineKeyboardButton(
-            "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/MajesteSahip")
+            "📩 Sahibim", url="https://t.me/MacroPem")
         ]
       ]
      ))
@@ -83,16 +83,16 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>\nsᴇsʟɪ sᴏʜʙᴇᴛ ᴋᴏᴍᴜᴛʟᴀʀɪ » /vbul => ᴠɪᴅᴇᴏ ɪɴᴅɪʀ . \n» /bul => ᴍᴜᴢɪᴋ ɪɴᴅɪʀ . \n» /oynat => ᴍᴜᴢɪᴋ ᴏʏɴᴀᴛ . \n» /durdur => ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀ . \n» /devam => ᴍᴜᴢɪɢɪ sᴜʀᴅᴜʀ . \n» /atla =>  ᴍᴜᴢɪɢɪ ᴀᴛʟᴀ . \n» /son => ᴍᴜᴢɪɢɪ sᴏɴʟᴀɴᴅɪʀ . \n» /katil => ᴀsɪsᴛᴀɴɪ ɢʀᴜʙᴀ ᴅᴀᴠᴇᴛ ᴇᴅᴇʀ . \n» /reload => ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ .</b>\n\n\n sᴇssɪᴢ sɪɴᴇᴍᴀ ᴏʏᴜɴ ᴋᴏᴍᴜᴛʟᴀʀɪ: \n» /oyun => ʏᴇɴɪ ᴏʏᴜɴ ʙᴀşʟᴀᴛɪʀ . \n» /ogretmen => ᴏ̈ɢ̆ʀᴇᴛᴍᴇɴ ᴏʟᴍᴀᴋ \n» /puan => ɢʀᴜᴘ ᴜ̈ᴢᴇʀᴇ ᴘᴜᴀɴʟᴀʀ </b>""",
+    await query.edit_message_text(f"""<b>\nsᴇsʟɪ sᴏʜʙᴇᴛ ᴋᴏᴍᴜᴛʟᴀʀɪ \n» /vbul => ᴠɪᴅᴇᴏ ɪɴᴅɪʀ . \n» /bul => ᴍᴜᴢɪᴋ ɪɴᴅɪʀ . \n» /oynat => ᴍᴜᴢɪᴋ ᴏʏɴᴀᴛ . \n» /durdur => ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀ . \n» /devam => ᴍᴜᴢɪɢɪ sᴜʀᴅᴜʀ . \n» /atla =>  ᴍᴜᴢɪɢɪ ᴀᴛʟᴀ . \n» /son => ᴍᴜᴢɪɢɪ sᴏɴʟᴀɴᴅɪʀ . \n» /katil => ᴀsɪsᴛᴀɴɪ ɢʀᴜʙᴀ ᴅᴀᴠᴇᴛ ᴇᴅᴇʀ . \n» /reload => ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ .</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/MajesteSahip")
+                         "📩 Sohbet Grubu", url="https://t.me/MajesteSohbetTr")
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="cbbilgi")
+                         "⬅️ Geri ⬅️", callback_data="cbbilgi")
                  ] 
              ]
          )
@@ -106,7 +106,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/MajesteSahip")
+                         "⚙ Geliştirici", url="https://t.me/MacroPem")
                  ],
                  [
                      InlineKeyboardButton(
@@ -119,7 +119,7 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""● **𝖬𝖾𝗋𝗁𝖺𝖻𝖺** {query.from_user.mention} \n\n● **𝖡𝖾𝗇** {bot} !\n\n● **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗅𝖾𝗋𝖽𝖾 müzik 𝖢𝖺𝗅𝖺𝖻𝗂𝗅𝖾𝗇 𝖡𝗈𝗍𝗎𝗆 . . !** \n\n● **𝖡𝖺𝗇 𝖸𝖾𝗍𝗄𝗂𝗌𝗂𝗓, 𝖲𝖾𝗌 𝖸𝗈𝗇𝖾𝗍𝗂𝗆 𝖸𝖾𝗍𝗄𝗂𝗌𝗂 𝗏𝖾𝗋𝗂𝗉 𝖠𝗌𝗂𝗌𝗍𝖺𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖤𝗄𝗅𝖾𝗒𝗂𝗇 . . !**""",
+    await query.edit_message_text(f"""⇨ **Merhaba Hoş Geldin [Efendim](tg://settings)** \n\n⇨ **Ben** {bot} \n\n⇨ **Sesli Sohbetlerde Müzik Çalabilirim** \n\n **Beni Gruba Yönetici olarak Ekleyip Kesintisiz Müziğin Tadını Çıkarabilirsiniz.**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -129,10 +129,10 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/MajesteMusicAsistan"
+                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/MajesteMusicProAsistan"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/MajesteSahip"
+                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/MacroPem"
                     )
                 ],
                 [
@@ -140,7 +140,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📚 𝐊𝐨𝐦𝐮𝐭𝐥𝐚𝐫" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/MajesteBotlar"
+                        "📝 Sohbet Grubu", url=f"https://t.me/MajesteSohbetTr"
                     )
                 ]
                 
