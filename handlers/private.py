@@ -40,9 +40,9 @@ async def start(_, message: Message):
   
 
 
-@Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
+@Client.on_message(command(["komutlar", f"bilgi@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" Not ⇒ \n\n **Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** ⇒ \n\n ⇒ **Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
+      await message.reply_text(" **⇨ Not:** \n\n **⇨ Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** ⇒ \n\n **⇨ Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **⇨ bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
@@ -62,7 +62,7 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text("Not ⇒ \n\n **Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** ⇒ \n\n ⇒ **Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
+    await query.edit_message_text("**⇨ Not:** \n\n **⇨ Botun Aktif Çalışabilmesi için Şu 3 Yetkiye ihtiyacı vardır** \n\n ⇒ **⇨ Sesli Sohbetleri Yönetme , Bağlantılar ile davet etme , Mesajları Silme** \n\n **⇨ bu 3 yetkiyi vererek botu kullanabilirsiniz**", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
