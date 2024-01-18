@@ -34,15 +34,15 @@ def transcode(filename):
 def convert_seconds(seconds):
     seconds = seconds % (24 * 3600)
     seconds %= 3600
-    minutes = seconds // 60
-    seconds %= 60
+    minutes = seconds // 180
+    seconds %= 180
     return "%02d:%02d" % (minutes, seconds)
 
 
 # Convert hh:mm:ss to seconds
 def time_to_seconds(time):
     stringt = str(time)
-    return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
+    return sum(int(x) * 180 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
 # Change image size
@@ -145,7 +145,7 @@ async def play(_, message: Message):
     url = get_url(message)
 
     if audio:
-        if round(audio.duration / 60) > DURATION_LIMIT:
+        if round(audio.duration / 180) > DURATION_LIMIT:
             raise DurationLimitError(
                 f"❌ Daha uzun videolar {DURATION_LIMIT} dakikaların oynatılamasına izin verilmez!"
             )
@@ -154,7 +154,7 @@ async def play(_, message: Message):
         title = file_name
         thumb_name = "https://i.ibb.co/Qkz78hx/images-1.jpg"
         thumbnail = thumb_name
-        duration = round(audio.duration / 60)
+        duration = round(audio.duration / 180)
         views = "Yerel olarak eklendi"
 
         keyboard = InlineKeyboardMarkup(
@@ -193,13 +193,13 @@ async def play(_, message: Message):
             secmul, dur, dur_arr = 1, 0, duration.split(':')
             for i in range(len(dur_arr)-1, -1, -1):
                 dur += (int(dur_arr[i]) * secmul)
-                secmul *= 60
+                secmul *= 180
                 
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📚 Channel", url=f"https://t.me/MajesteBotlar"),
-                InlineKeyboardButton("📝 Support", url=f"https://t.me/MajesteSohbetTr"),
+                InlineKeyboardButton("📚 Channel", url=f"https://t.me/cavresozel"),
+                InlineKeyboardButton("📝 Support", url=f"https://t.me/cavresozel"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
@@ -220,7 +220,7 @@ async def play(_, message: Message):
                         ]
                     ]
                 )
-        if (dur / 60) > DURATION_LIMIT:
+        if (dur / 180) > DURATION_LIMIT:
              await lel.edit(f"❌ Daha uzun videolar {DURATION_LIMIT} dakikaların oynatılamasına izin verilmez!")
              return
         requested_by = message.from_user.first_name
@@ -251,7 +251,7 @@ async def play(_, message: Message):
             secmul, dur, dur_arr = 1, 0, duration.split(':')
             for i in range(len(dur_arr)-1, -1, -1):
                 dur += (int(dur_arr[i]) * secmul)
-                secmul *= 60
+                secmul *= 180
                 
         except Exception as e:
             await lel.edit(
@@ -263,8 +263,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📚 Channel", url=f"https://t.me/MajesteBotlar"),
-                InlineKeyboardButton("📝 Support", url=f"https://t.me/Majesteler"),
+                InlineKeyboardButton("📚 Channel", url=f"https://t.me/cavresozel"),
+                InlineKeyboardButton("📝 Support", url=f"https://t.me/cavresozel"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
