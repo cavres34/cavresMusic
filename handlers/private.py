@@ -8,13 +8,13 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://telegra.ph/file/9190514dd95bb720fefa2.jpg",
+                "https://te.legra.ph/%C3%87avre%C5%9F-01-12",
                 caption=(f"""⇨ **Merhaba Hoş Geldin [Efendim](tg://settings)** \n\n⇨ **Ben** {bot} \n\n⇨ **Sesli Sohbetlerde Müzik Çalabilirim** \n\n **Beni Gruba Yönetici olarak Ekleyip Kesintisiz Müziğin Tadını Çıkarabilirsiniz.**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 Beni Gruba Ekle 🎉", url=f"https://t.me/MajesteMusicProBot?startgroup=true"
+                        "🎉 Beni Gruba Ekle 🎉", url=f"https://t.me/cavresozel"
                     )
                 ],
                 [
