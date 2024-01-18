@@ -3,7 +3,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 from config import BOT_USERNAME, BOT_NAME as bot
 from helpers.filters import command, other_filters2
-# EfsaneMusicVaves tarafından düzenlendi. 
+# caveesMusicVaves tarafından düzenlendi. 
 
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
@@ -19,10 +19,10 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 Asistan", url="https://t.me/MajesteMusicProAsistan"
+                        "🇹🇷 Asistan", url=""
                     ),
                     InlineKeyboardButton(
-                        "📝 Sahibim", url="https://t.me/MacroPem"
+                        "📝 Sahibim", url="https://t.me/rahatsizetmeyiniz34"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "📚 Komutlar" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 Sohbet Grubu", url=f"https://t.me/MajesteSohbetTr"
+                        "📝 Sohbet Grubu", url=f"https://t.me/cavresozel"
                     )
                 ]
                 
